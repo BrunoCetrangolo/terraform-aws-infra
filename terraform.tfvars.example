@@ -1,0 +1,12 @@
+# Copiá este archivo a terraform.tfvars y completá tus valores.
+# terraform.tfvars NUNCA se sube a git (ver .gitignore) porque
+# puede contener datos sensibles como la contraseña de la base.
+
+aws_region   = "us-east-1"
+project_name = "terraform-aws-infra"
+
+key_name         = "tu-key-pair-existente"
+allowed_ssh_cidr = "TU.IP.PUB.LICA/32"
+
+db_username = "admin"
+db_password = "elegi-una-contrasena-segura-aca"

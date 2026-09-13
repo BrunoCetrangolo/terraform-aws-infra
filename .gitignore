@@ -1,0 +1,19 @@
+# Estado de Terraform: contiene datos sensibles (IDs, a veces
+# contraseñas en texto plano) y es específico de cada despliegue.
+# Nunca se comparte por git.
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Carpeta de plugins/providers descargados, se regenera con
+# 'terraform init'
+.terraform/
+.terraform.lock.hcl
+
+# Variables reales del usuario: pueden tener contraseñas
+terraform.tfvars
+*.auto.tfvars
+
+# Plan guardado en archivo
+*.tfplan
