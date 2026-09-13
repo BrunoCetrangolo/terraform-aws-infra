@@ -138,19 +138,3 @@ terraform-aws-infra/
         └── outputs.tf
 ```
 
-## Próximos pasos (roadmap)
-
-- Mover el state a un backend remoto (S3 + DynamoDB para locking),
-  en vez del state local por defecto — necesario en cualquier equipo
-  real donde más de una persona aplica cambios.
-- Separar en workspaces o carpetas `environments/dev` y
-  `environments/prod` con distintos `.tfvars` por ambiente.
-- Sumar un Application Load Balancer delante de la EC2.
-
-## Por qué este proyecto
-
-Pensado como pieza de portfolio para roles DevOps/Cloud junior:
-muestra una arquitectura de AWS realista (no solo "un bucket S3"),
-organizada en módulos reutilizables, con el manejo de secretos y de
-seguridad de red (subnets públicas/privadas, Security Groups en
-capas) que se espera en un entorno de producción real.
